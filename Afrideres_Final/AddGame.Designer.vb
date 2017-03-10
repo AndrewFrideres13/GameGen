@@ -33,65 +33,65 @@ Partial Class AddGame
         '
         'btnExit
         '
-        Me.btnExit.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnExit.Location = New System.Drawing.Point(167, 132)
+        Me.btnExit.Font = New System.Drawing.Font("Segoe Script", 24.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnExit.Location = New System.Drawing.Point(220, 302)
         Me.btnExit.Name = "btnExit"
-        Me.btnExit.Size = New System.Drawing.Size(105, 31)
+        Me.btnExit.Size = New System.Drawing.Size(155, 55)
         Me.btnExit.TabIndex = 9
         Me.btnExit.Text = "Exit"
         Me.btnExit.UseVisualStyleBackColor = True
         '
         'btnAddGame
         '
-        Me.btnAddGame.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!)
-        Me.btnAddGame.Location = New System.Drawing.Point(167, 61)
+        Me.btnAddGame.Font = New System.Drawing.Font("Segoe Script", 24.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAddGame.Location = New System.Drawing.Point(187, 213)
         Me.btnAddGame.Name = "btnAddGame"
-        Me.btnAddGame.Size = New System.Drawing.Size(105, 55)
+        Me.btnAddGame.Size = New System.Drawing.Size(231, 67)
         Me.btnAddGame.TabIndex = 10
-        Me.btnAddGame.Text = "Add Game Info"
+        Me.btnAddGame.Text = "Add Game"
         Me.btnAddGame.UseVisualStyleBackColor = True
         '
         'txtGame
         '
-        Me.txtGame.Location = New System.Drawing.Point(36, 89)
+        Me.txtGame.Location = New System.Drawing.Point(27, 161)
         Me.txtGame.Name = "txtGame"
-        Me.txtGame.Size = New System.Drawing.Size(105, 20)
+        Me.txtGame.Size = New System.Drawing.Size(152, 20)
         Me.txtGame.TabIndex = 11
         '
         'lblAdd
         '
         Me.lblAdd.AutoSize = True
-        Me.lblAdd.Font = New System.Drawing.Font("Microsoft Sans Serif", 17.0!)
-        Me.lblAdd.Location = New System.Drawing.Point(56, 9)
+        Me.lblAdd.Font = New System.Drawing.Font("Ravie", 39.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAdd.Location = New System.Drawing.Point(-6, 9)
         Me.lblAdd.Name = "lblAdd"
-        Me.lblAdd.Size = New System.Drawing.Size(190, 29)
+        Me.lblAdd.Size = New System.Drawing.Size(585, 71)
         Me.lblAdd.TabIndex = 12
         Me.lblAdd.Text = "Add Game Form"
         '
         'txtSystem
         '
-        Me.txtSystem.Location = New System.Drawing.Point(36, 140)
+        Me.txtSystem.Location = New System.Drawing.Point(381, 161)
         Me.txtSystem.Name = "txtSystem"
-        Me.txtSystem.Size = New System.Drawing.Size(105, 20)
+        Me.txtSystem.Size = New System.Drawing.Size(143, 20)
         Me.txtSystem.TabIndex = 14
         '
         'lblGame
         '
         Me.lblGame.AutoSize = True
-        Me.lblGame.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
-        Me.lblGame.Location = New System.Drawing.Point(53, 61)
+        Me.lblGame.Font = New System.Drawing.Font("Snap ITC", 32.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblGame.Location = New System.Drawing.Point(17, 95)
         Me.lblGame.Name = "lblGame"
-        Me.lblGame.Size = New System.Drawing.Size(65, 25)
+        Me.lblGame.Size = New System.Drawing.Size(155, 55)
         Me.lblGame.TabIndex = 15
         Me.lblGame.Text = "Game"
         '
         'lblSyst
         '
         Me.lblSyst.AutoSize = True
-        Me.lblSyst.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
-        Me.lblSyst.Location = New System.Drawing.Point(47, 112)
+        Me.lblSyst.Font = New System.Drawing.Font("Snap ITC", 32.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSyst.Location = New System.Drawing.Point(345, 95)
         Me.lblSyst.Name = "lblSyst"
-        Me.lblSyst.Size = New System.Drawing.Size(78, 25)
+        Me.lblSyst.Size = New System.Drawing.Size(208, 55)
         Me.lblSyst.TabIndex = 16
         Me.lblSyst.Text = "System"
         '
@@ -99,7 +99,8 @@ Partial Class AddGame
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 192)
+        Me.BackColor = System.Drawing.SystemColors.InactiveCaption
+        Me.ClientSize = New System.Drawing.Size(576, 372)
         Me.Controls.Add(Me.lblSyst)
         Me.Controls.Add(Me.lblGame)
         Me.Controls.Add(Me.txtSystem)

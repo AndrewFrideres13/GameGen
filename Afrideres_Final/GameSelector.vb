@@ -3,6 +3,7 @@ Option Explicit On
 
 Imports System.ComponentModel
 Imports System.Data.SqlClient
+Imports System.Reflection
 
 Public Class GameSelector
     Dim Games As New BindingList(Of Games)
@@ -11,6 +12,7 @@ Public Class GameSelector
     Dim currentGame As New Games
     Dim currentSystem As New Games
     Dim path As String
+    Dim i As Integer
 
     Private Sub GameSelector_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'Sets the datasource for the list boxes, assigns the Game Name to Game List, Game System to System List
@@ -24,7 +26,7 @@ Public Class GameSelector
         Try
             Dim dbConnection = openDbConnection()
 
-            Dim selectCommand As New SqlCommand("SELECT * FROM GameInfo", dbConnection)
+            Dim selectCommand As New SqlCommand("SELECT * FROM GameInfo ORDER BY Name", dbConnection)
 
             Dim reader As SqlDataReader = selectCommand.ExecuteReader
 
@@ -45,11 +47,11 @@ Public Class GameSelector
 
     'Values from the given columns
     Private Sub populateGameFromDB(reader As SqlDataReader)
-        Dim newDbGame As New Games()
-
-        newDbGame.Id = CInt(reader.Item("Id"))
-        newDbGame.Name = reader.Item("Name").ToString
-        newDbGame.System = reader.Item("System").ToString
+        Dim newDbGame As New Games() With {
+            .Id = CInt(reader.Item("Id")),
+            .Name = reader.Item("Name").ToString,
+            .System = reader.Item("System").ToString
+        }
 
         Games.Add(newDbGame)
     End Sub
@@ -74,10 +76,8 @@ Public Class GameSelector
         Startup.Close()
     End Sub
 
-
-
     Private Function openDbConnection() As SqlConnection
-        Dim connectionString As String = "Server=(LocalDB)\MSSQLLocalDB;Integrated Security=True;AttachDbFilename=C:\Users\Andrew\Desktop\Afrideres_Final\Afrideres_Final\Games.mdf"
+        Dim connectionString As String = "Server=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Games.mdf;Integrated Security=True"
         Dim dbConnection As New SqlConnection(connectionString)
         dbConnection.Open()
         Return dbConnection
@@ -96,7 +96,26 @@ Public Class GameSelector
     End Function
 
     Private Sub btnGameSelect_Click(sender As Object, e As EventArgs) Handles btnGameSelect.Click
+        My.Computer.Audio.Play($"{My.Application.Info.DirectoryPath}\assets\spin.wav",
+        AudioPlayMode.Background)
+        System.Threading.Thread.Sleep(1000)
+        While i <= 50
+            System.Threading.Thread.Sleep(100)
+            lbxGameList.SelectedIndex = randomGame()
+            i += 1
+        End While
         lbxGameList.SelectedIndex = randomGame()
+        System.Threading.Thread.Sleep(300)
+        lbxGameList.SelectedIndex = randomGame()
+        System.Threading.Thread.Sleep(500)
+        lbxGameList.SelectedIndex = randomGame()
+        System.Threading.Thread.Sleep(700)
+        lbxGameList.SelectedIndex = randomGame()
+        System.Threading.Thread.Sleep(1000)
+        lbxGameList.SelectedIndex = randomGame()
+        System.Threading.Thread.Sleep(1200)
+        lbxGameList.SelectedIndex = randomGame()
+        i = 0
     End Sub
 
     Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click

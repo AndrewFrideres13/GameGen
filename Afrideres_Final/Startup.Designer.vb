@@ -28,41 +28,40 @@ Partial Class Startup
         '
         'lblWelcome
         '
-        Me.lblWelcome.AutoSize = True
-        Me.lblWelcome.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!)
+        Me.lblWelcome.Font = New System.Drawing.Font("Ravie", 39.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblWelcome.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.lblWelcome.Location = New System.Drawing.Point(2, 14)
+        Me.lblWelcome.Location = New System.Drawing.Point(2, -45)
         Me.lblWelcome.Name = "lblWelcome"
-        Me.lblWelcome.Size = New System.Drawing.Size(499, 52)
+        Me.lblWelcome.Size = New System.Drawing.Size(649, 344)
         Me.lblWelcome.TabIndex = 0
-        Me.lblWelcome.Text = "       Welcome to the Random Game Generator!  " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Click below to get started and th" &
-    "anks for using me!"
+        Me.lblWelcome.Text = "Welcome to the Random Game Generator!" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.lblWelcome.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'btnStart
         '
         Me.btnStart.FlatAppearance.BorderColor = System.Drawing.Color.Red
-        Me.btnStart.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
+        Me.btnStart.Font = New System.Drawing.Font("Segoe Script", 26.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnStart.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.btnStart.Location = New System.Drawing.Point(180, 132)
+        Me.btnStart.Location = New System.Drawing.Point(234, 291)
         Me.btnStart.Name = "btnStart"
         Me.btnStart.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.btnStart.Size = New System.Drawing.Size(138, 78)
+        Me.btnStart.Size = New System.Drawing.Size(141, 71)
         Me.btnStart.TabIndex = 1
-        Me.btnStart.Text = "Load Game Generator"
+        Me.btnStart.Text = "Load"
         Me.btnStart.UseVisualStyleBackColor = True
         '
         'Startup
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(506, 244)
+        Me.BackColor = System.Drawing.SystemColors.InactiveCaption
+        Me.ClientSize = New System.Drawing.Size(641, 389)
         Me.Controls.Add(Me.btnStart)
         Me.Controls.Add(Me.lblWelcome)
         Me.ForeColor = System.Drawing.SystemColors.ControlDarkDark
         Me.Name = "Startup"
         Me.Text = "Startup"
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 

@@ -36,56 +36,63 @@ Partial Class GameSelector
         '
         'lbxGameList
         '
+        Me.lbxGameList.AllowDrop = True
+        Me.lbxGameList.BackColor = System.Drawing.SystemColors.MenuBar
+        Me.lbxGameList.Font = New System.Drawing.Font("Snap ITC", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbxGameList.FormattingEnabled = True
-        Me.lbxGameList.Location = New System.Drawing.Point(24, 106)
+        Me.lbxGameList.ItemHeight = 23
+        Me.lbxGameList.Location = New System.Drawing.Point(27, 159)
         Me.lbxGameList.Name = "lbxGameList"
-        Me.lbxGameList.Size = New System.Drawing.Size(150, 95)
+        Me.lbxGameList.Size = New System.Drawing.Size(308, 188)
         Me.lbxGameList.TabIndex = 0
         '
         'lbxSystem
         '
-        Me.lbxSystem.FormattingEnabled = True
-        Me.lbxSystem.Location = New System.Drawing.Point(283, 106)
+        Me.lbxSystem.BackColor = System.Drawing.SystemColors.Control
+        Me.lbxSystem.Font = New System.Drawing.Font("Snap ITC", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbxSystem.ItemHeight = 25
+        Me.lbxSystem.Location = New System.Drawing.Point(434, 159)
         Me.lbxSystem.Name = "lbxSystem"
-        Me.lbxSystem.Size = New System.Drawing.Size(147, 95)
-        Me.lbxSystem.TabIndex = 1
+        Me.lbxSystem.Size = New System.Drawing.Size(178, 179)
+        Me.lbxSystem.TabIndex = 0
         '
         'lblGameSelector
         '
         Me.lblGameSelector.AutoSize = True
-        Me.lblGameSelector.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
-        Me.lblGameSelector.Location = New System.Drawing.Point(105, 9)
+        Me.lblGameSelector.Font = New System.Drawing.Font("Ravie", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblGameSelector.Location = New System.Drawing.Point(104, 9)
         Me.lblGameSelector.Name = "lblGameSelector"
-        Me.lblGameSelector.Size = New System.Drawing.Size(243, 39)
+        Me.lblGameSelector.Size = New System.Drawing.Size(489, 63)
         Me.lblGameSelector.TabIndex = 2
         Me.lblGameSelector.Text = "Game Selector"
         '
         'lblGame
         '
         Me.lblGame.AutoEllipsis = True
-        Me.lblGame.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!)
-        Me.lblGame.Location = New System.Drawing.Point(39, 59)
+        Me.lblGame.Font = New System.Drawing.Font("Snap ITC", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblGame.Location = New System.Drawing.Point(-3, 72)
         Me.lblGame.Name = "lblGame"
-        Me.lblGame.Size = New System.Drawing.Size(135, 44)
+        Me.lblGame.Size = New System.Drawing.Size(324, 84)
         Me.lblGame.TabIndex = 3
         Me.lblGame.Text = "Game"
+        Me.lblGame.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblSystem
         '
         Me.lblSystem.AutoSize = True
-        Me.lblSystem.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!)
-        Me.lblSystem.Location = New System.Drawing.Point(331, 56)
+        Me.lblSystem.Font = New System.Drawing.Font("Snap ITC", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSystem.Location = New System.Drawing.Point(474, 96)
         Me.lblSystem.Name = "lblSystem"
-        Me.lblSystem.Size = New System.Drawing.Size(71, 24)
+        Me.lblSystem.Size = New System.Drawing.Size(128, 35)
         Me.lblSystem.TabIndex = 4
         Me.lblSystem.Text = "System"
         '
         'btnGameSelect
         '
-        Me.btnGameSelect.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
-        Me.btnGameSelect.Location = New System.Drawing.Point(24, 207)
+        Me.btnGameSelect.Font = New System.Drawing.Font("Segoe Script", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnGameSelect.Location = New System.Drawing.Point(27, 363)
         Me.btnGameSelect.Name = "btnGameSelect"
-        Me.btnGameSelect.Size = New System.Drawing.Size(105, 62)
+        Me.btnGameSelect.Size = New System.Drawing.Size(133, 90)
         Me.btnGameSelect.TabIndex = 5
         Me.btnGameSelect.Text = "Pick a game!"
         Me.btnGameSelect.UseVisualStyleBackColor = True
@@ -93,48 +100,50 @@ Partial Class GameSelector
         'lblGameText
         '
         Me.lblGameText.AutoSize = True
-        Me.lblGameText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!)
-        Me.lblGameText.Location = New System.Drawing.Point(194, 56)
+        Me.lblGameText.Font = New System.Drawing.Font("Snap ITC", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblGameText.Location = New System.Drawing.Point(317, 97)
         Me.lblGameText.Name = "lblGameText"
-        Me.lblGameText.Size = New System.Drawing.Size(62, 24)
+        Me.lblGameText.Size = New System.Drawing.Size(126, 35)
         Me.lblGameText.TabIndex = 6
         Me.lblGameText.Text = "for the"
         '
         'btnExit
         '
-        Me.btnExit.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
-        Me.btnExit.Location = New System.Drawing.Point(325, 207)
+        Me.btnExit.Font = New System.Drawing.Font("Segoe Script", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnExit.Location = New System.Drawing.Point(273, 469)
         Me.btnExit.Name = "btnExit"
-        Me.btnExit.Size = New System.Drawing.Size(105, 62)
+        Me.btnExit.Size = New System.Drawing.Size(121, 46)
         Me.btnExit.TabIndex = 8
         Me.btnExit.Text = "Exit"
         Me.btnExit.UseVisualStyleBackColor = True
         '
         'btnDelete
         '
-        Me.btnDelete.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnDelete.Location = New System.Drawing.Point(233, 207)
+        Me.btnDelete.Font = New System.Drawing.Font("Segoe Script", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDelete.Location = New System.Drawing.Point(481, 363)
         Me.btnDelete.Name = "btnDelete"
-        Me.btnDelete.Size = New System.Drawing.Size(76, 62)
+        Me.btnDelete.Size = New System.Drawing.Size(131, 90)
         Me.btnDelete.TabIndex = 13
         Me.btnDelete.Text = "Remove Game"
         Me.btnDelete.UseVisualStyleBackColor = True
         '
         'btnAddGame
         '
-        Me.btnAddGame.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAddGame.Location = New System.Drawing.Point(148, 207)
+        Me.btnAddGame.Font = New System.Drawing.Font("Segoe Script", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAddGame.Location = New System.Drawing.Point(270, 363)
         Me.btnAddGame.Name = "btnAddGame"
-        Me.btnAddGame.Size = New System.Drawing.Size(73, 62)
+        Me.btnAddGame.Size = New System.Drawing.Size(124, 90)
         Me.btnAddGame.TabIndex = 12
-        Me.btnAddGame.Text = "Add a Game"
+        Me.btnAddGame.Text = "Add Game"
         Me.btnAddGame.UseVisualStyleBackColor = True
         '
         'GameSelector
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(451, 291)
+        Me.BackColor = System.Drawing.SystemColors.InactiveCaption
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(652, 526)
         Me.Controls.Add(Me.btnDelete)
         Me.Controls.Add(Me.btnAddGame)
         Me.Controls.Add(Me.btnExit)

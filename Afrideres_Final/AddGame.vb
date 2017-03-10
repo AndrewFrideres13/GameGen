@@ -47,7 +47,7 @@ Public Class AddGame
     End Function
 
     Private Function openDbConnection() As SqlConnection
-        Dim connectionString As String = "Server=(LocalDB)\MSSQLLocalDB;Integrated Security=True;AttachDbFilename=C:\Users\Andrew\Desktop\Afrideres_Final\Afrideres_Final\Games.mdf"
+        Dim connectionString As String = "Server=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Games.mdf;Integrated Security=True"
         Dim dbConnection As New SqlConnection(connectionString)
         dbConnection.Open()
         Return dbConnection
